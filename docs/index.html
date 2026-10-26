@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#061a36">
+  <meta name="description" content="Motokuni Takaoka — Chairman of the Board, President and Chief Executive Officer at airweave inc.">
+  <title>Motokuni Takaoka — airweave</title>
+  <link rel="preload" href="assets/airweave-intro-mobile.mp4" as="video" media="(max-width:700px) and (orientation:portrait)" type="video/mp4">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="identity" id="identity" aria-label="Motokuni Takaoka digital business card">
+    <video class="video background-video" id="background-video" muted playsinline loop preload="metadata" disablepictureinpicture aria-hidden="true">
+      <source media="(max-width:700px) and (orientation:portrait)" src="assets/airweave-loop-mobile.mp4" type="video/mp4">
+      <source src="assets/airweave-loop.mp4" type="video/mp4">
+    </video>
+
+    <video class="video intro-video" id="intro-video" autoplay muted playsinline preload="auto" disablepictureinpicture aria-hidden="true">
+      <source media="(max-width:700px) and (orientation:portrait)" src="assets/airweave-intro-mobile.mp4" type="video/mp4">
+      <source src="assets/airweave-intro.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-shade" aria-hidden="true"></div>
+    <button class="play-gate" id="play-gate" type="button" hidden><i></i>TAP TO PLAY</button>
+
+    <img class="intro-wordmark" src="assets/airweave-official-logo.png" alt="" aria-hidden="true">
+    <header><img class="wordmark" src="assets/airweave-official-logo.png" alt="airweave"></header>
+
+    <section class="identity-content">
+      <div class="person">
+        <h1>Motokuni <span>Takaoka</span></h1>
+        <p class="role">Chairman of the Board<br>President and Chief Executive Officer</p>
+      </div>
+
+      <div class="actions">
+        <button id="save-contact" type="button">
+          <span>SAVE CONTACT</span>
+          <svg class="action-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v15m0 0-5-5m5 5 5-5"></path></svg>
+          <i class="tap-wave" aria-hidden="true"></i>
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
