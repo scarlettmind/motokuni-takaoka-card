@@ -182,7 +182,7 @@ header {
   transform: none;
 }
 
-.actions button {
+.actions .save-contact {
   position: relative;
   isolation: isolate;
   overflow: hidden;
@@ -199,11 +199,12 @@ header {
   font-weight: 600;
   letter-spacing: .23em;
   cursor: pointer;
+  text-decoration: none;
   transition: filter .2s, background .2s;
 }
 
-.actions button::before,
-.actions button::after {
+.actions .save-contact::before,
+.actions .save-contact::after {
   content: "";
   position: absolute;
   z-index: 0;
@@ -211,7 +212,7 @@ header {
   will-change: transform;
 }
 
-.actions button::before {
+.actions .save-contact::before {
   width: 150%;
   height: 270%;
   left: -24%;
@@ -225,7 +226,7 @@ header {
   animation: liquid-drift 8s ease-in-out infinite alternate;
 }
 
-.actions button::after {
+.actions .save-contact::after {
   width: 95%;
   height: 120%;
   right: -33%;
@@ -236,15 +237,15 @@ header {
   animation: liquid-bloom 5.5s ease-in-out infinite alternate;
 }
 
-.actions button:hover,
-.actions button:focus-visible {
+.actions .save-contact:hover,
+.actions .save-contact:focus-visible {
   color: var(--ink);
   background: linear-gradient(110deg, rgb(199 230 243 / 96%), rgb(223 230 245 / 94%));
   filter: brightness(1.06);
   outline: none;
 }
 
-.actions button span,
+.actions .save-contact span,
 .action-arrow {
   position: relative;
   z-index: 2;
@@ -370,7 +371,7 @@ header {
     margin-top: clamp(38px, 6.5vh, 54px);
   }
 
-  .actions button {
+  .actions .save-contact {
     height: 64px;
     padding-inline: 16px;
     font-size: 8px;
@@ -399,6 +400,6 @@ header {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .actions button::before,
-  .actions button::after { animation: none; }
+  .actions .save-contact::before,
+  .actions .save-contact::after { animation: none; }
 }
